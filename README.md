@@ -32,3 +32,9 @@ POST:
 DELETE:
   http://localhost:7090/user/1
 ````
+
+## Maven
+````
+ mvn clean install
+ mvn spring-boot:run
+````
