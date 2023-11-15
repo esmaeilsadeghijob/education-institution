@@ -1,6 +1,6 @@
 git clone https://github.com/esmaeilsadeghijob/education-institution.git
 
-git checkout -b dev
+git checkout -b Pourabdolahi
 
 git branch
 
@@ -12,4 +12,4 @@ git commit -m "Modified application.yml"
 
 git push
 
-git push --set-upstream origin dev
+git push --set-upstream origin Pourabdolahi
