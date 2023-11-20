@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "users")
+// mojt
 public class User {
 
     @Id
