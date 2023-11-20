@@ -31,4 +31,16 @@ public class UserService {
     public void delete(Long id) {
         userRepository.deleteById(id);
     }
+
+    public void update(User user){
+        User user1=findUserById(user.getId());
+        if (user1 != null){
+            user1.setUsername(user.getUsername());
+            user1.setPassword(user.getPassword());
+            user1.setEmail(user.getEmail());
+            user1.setPhone(user.getPhone());
+            userRepository.save(user1);
+        }
+
+    }
 }

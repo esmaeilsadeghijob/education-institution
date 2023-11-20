@@ -35,6 +35,13 @@ public class UserController {
     }
 
     // TODO: 11/9/23 Put Method
+    @PutMapping
+    public void update(@RequestBody User user){
+        userService.update(user);
+
+    }
+
+    }
 
 
 }
