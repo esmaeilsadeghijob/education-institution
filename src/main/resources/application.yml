@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/cando
+    url: jdbc:postgresql://localhost:5432/uni
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
