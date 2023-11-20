@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "users")
-// mojt
+// EEEEE
 public class User {
 
     @Id
