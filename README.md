@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 # education-institution
 
 ### Git Statement {dev}
 ````
+
+
 git clone https://github.com/esmaeilsadeghijob/education-institution.git
 
-git checkout -b dev
+ git pull --allow-unrelated-histories https://github.com/esmaeilsadeghijob/education-institution.git Pourabdolahi
+
+
+git checkout -b Pourabdolahi
 
 git branch
 
@@ -16,6 +22,7 @@ git commit -m "Modified application.yml"
 
 git push
 
+<<<<<<< HEAD
 git push --set-upstream origin dev
 
 ````
@@ -38,3 +45,6 @@ DELETE:
  mvn clean install
  mvn spring-boot:run
 ````
+=======
+git push --set-upstream origin Pourabdolahi
+
