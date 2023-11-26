@@ -1,6 +1,5 @@
 package com.cando.uni.repository;
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-
     Optional<List<User>> findByEmail(String email);
 
 }

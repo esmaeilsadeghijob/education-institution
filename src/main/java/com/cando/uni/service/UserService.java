@@ -25,13 +25,10 @@ public class UserService {
         Optional<User> userOptional = userRepository.findById(id);
         return userOptional.orElse(null);
     }
-
     public List<User> findUserByEmail(String email) {
         Optional<List<User>> userOptional = userRepository.findByEmail(email);
         return userOptional.orElse(null);
     }
-
-
     public User save(User user) {
         return userRepository.save(user);
     }
