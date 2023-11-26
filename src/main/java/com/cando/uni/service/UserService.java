@@ -30,6 +30,7 @@ public class UserService {
         Optional<List<User>> userOptional = userRepository.findByEmail(email);
         return userOptional.orElse(null);
     }
+
     public List<User> findUserByUsername(String username) {
         Optional<List<User>> userOptional = userRepository.findByUsername(username);
         return userOptional.orElse(null);
