@@ -40,15 +40,10 @@ public class UserController {
         userService.update(user);
     }
 
-
     @GetMapping("/{email}")
     public List<User> findUserByEmail(@PathVariable String email) {
         return userService.findUserByEmail(email);
     }
 
-    @GetMapping("/{username}")
-    public List<User> findUserByUsername(@PathVariable String username) {
-        return userService.findUserByUsername(username);
-    }
 
 }

@@ -31,10 +31,6 @@ public class UserService {
         return userOptional.orElse(null);
     }
 
-    public List<User> findUserByUsername(String username) {
-        Optional<List<User>> userOptional = userRepository.findByUsername(username);
-        return userOptional.orElse(null);
-    }
 
     public User save(User user) {
         return userRepository.save(user);
@@ -46,6 +42,7 @@ public class UserService {
 
     public void update(User user) {
         Optional<User> userOptional = userRepository.findById(user.getId());
+
         userOptional.get().setUsername(user.getUsername());
         userOptional.get().setPassword(user.getPassword());
         userOptional.get().setPhone(user.getPhone());
