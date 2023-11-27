@@ -11,7 +11,8 @@ import javax.annotation.Resource;
 @RepositoryRestResource (collectionResourceRel = "person",path = "person")
 public interface PersonRepository  extends PagingAndSortingRepository<Person,Long> {
 @RestResource(rel ="findbyusername",path = "findbyusername")
-    Person findByusername(@Param("UserName") String username);
+    Person findByUsername (@Param("UserName") String username);
+
 
 
 }
