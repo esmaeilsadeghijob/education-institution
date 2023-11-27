@@ -6,5 +6,4 @@
     main
     dev
     prod
-    ...
 ````
