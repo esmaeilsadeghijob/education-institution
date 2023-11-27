@@ -7,10 +7,10 @@
 
 git clone https://github.com/esmaeilsadeghijob/education-institution.git
 
- git pull --allow-unrelated-histories https://github.com/esmaeilsadeghijob/education-institution.git VahidRostami
+ git pull --allow-unrelated-histories https://github.com/esmaeilsadeghijob/education-institution.git 
 
 
-git checkout -b VahidRostami
+git checkout -b 
 
 git branch
 
@@ -46,5 +46,5 @@ DELETE:
  mvn spring-boot:run
 ````
 =======
-git push --set-upstream origin VahidRostami
+git push --set-upstream origin 
 
