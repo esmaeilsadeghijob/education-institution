@@ -1,17 +1,9 @@
 server:
-<<<<<<< HEAD
-  port: 5050
-
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/cando
-=======
   port: 7090
 
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/uni
->>>>>>> d74cb0bce98f46979c21f45b386df623928d8e7a
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
