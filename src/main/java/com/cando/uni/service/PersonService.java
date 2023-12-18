@@ -1,7 +1,7 @@
 package com.cando.uni.service;
 
 import com.cando.uni.model.Person;
-import com.cando.uni.repository.PersonRepository;
+import com.cando.uni.repository.RestPersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class PersonService {
     @Autowired
-    private PersonRepository personRepository;
+    private RestPersonRepository personRepository;
 
     public List<Person> persons(){
         return personRepository.findAll();
