@@ -1,5 +1,6 @@
 package com.cando.uni.model;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,4 +20,7 @@ import javax.persistence.Table;
 public class Teacher extends Person {
     private long teacherNumber;
 
+=======
+public class Teacher extends Person {
+>>>>>>> 54cdee60d1dbd2028a71103824aa67d520636e96
 }

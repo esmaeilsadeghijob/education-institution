@@ -35,6 +35,19 @@ public class UserController {
     }
 
     // TODO: 11/9/23 Put Method
+    @PutMapping()
+    public void update(@RequestBody User user) {
+        userService.update(user);
+    }
 
+    @GetMapping("email")
+    public List<User> findByEmail(String email) {
+        return userService.findByEmail(email);
+    }
+
+    @GetMapping("phone")
+    public List<User> findByPhone(String phone) {
+        return userService.findByPhone(phone);
+    }
 
 }

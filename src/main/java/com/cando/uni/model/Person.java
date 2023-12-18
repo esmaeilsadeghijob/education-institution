@@ -1,10 +1,14 @@
 package com.cando.uni.model;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonInclude;
+=======
+>>>>>>> 54cdee60d1dbd2028a71103824aa67d520636e96
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 @Data
 @Entity
@@ -27,4 +31,21 @@ public class Person {
     private String email;
     private int age;
 
+=======
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Data
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+public class Person {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String firstname;
+    private String lastname;
+    private String phone;
+>>>>>>> 54cdee60d1dbd2028a71103824aa67d520636e96
 }
